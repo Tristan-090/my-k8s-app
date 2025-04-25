@@ -16,7 +16,7 @@ jobs:
       - run:
           name: Push Docker Image
           command: |
-            echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+            docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
             docker push tristan-090/my-k8s-app:latest
   deploy:
     docker:
