@@ -23,6 +23,6 @@ spec:
     spec:
       containers:
       - name: my-container
-        image: tristan-090/my-k8s-app:latest
+        image: tristan090/my-k8s-app:latest
         ports:
         - containerPort: 3000
