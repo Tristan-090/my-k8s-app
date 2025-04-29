@@ -32,4 +32,4 @@ jobs:
       - run:
           name: Deploy to Kubernetes
           command: |
-            kubectl set image deployment/my-k8s-deployment my-container=tristan090/my-k8s-app:latest -n dev
+            kubectl set image deployment/my-k8s-deployment my-container=tristan090/my-k8s-app:latest
