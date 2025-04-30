@@ -24,5 +24,9 @@ spec:
       containers:
       - name: my-container
         image: tristan090/my-k8s-app:dev
+        imagepullpolicy: always
         ports:
         - containerPort: 3000
+        
+      restartpolicy: always
+
